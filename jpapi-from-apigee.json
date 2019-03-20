@@ -84,6 +84,7 @@
           "200" : {
             "description" : "Success",
             "schema" : {
+              "$ref" : "#/definitions/DeviceEnrollmentInstance"
             }
           },
           "500" : {
