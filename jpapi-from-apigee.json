@@ -305,7 +305,6 @@
         ],
         "x-action": true
       },
-      "parameters": []
     },
     "/action/device-enrollment/{id}/upload-token": {
       "put": {
@@ -348,7 +347,6 @@
           "Update Device Enrollment Program Instances"
         ]
       },
-      "parameters": []
     },
     "/auth": {
       "get": {
