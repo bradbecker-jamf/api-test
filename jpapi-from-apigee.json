@@ -147,7 +147,6 @@
         },
         "x-authentication-required": true
       },
-      "parameters": []
     },
     "/action/device-enrollment/upload-token": {
       "post": {
@@ -365,7 +364,6 @@
         },
         "x-authentication-required": true
       },
-      "parameters": []
     },
     "/auth/current": {
       "post": {
@@ -385,7 +383,6 @@
         "x-authentication-required": true,
         "x-action": true
       },
-      "parameters": []
     },
     "/auth/invalidateToken": {
       "post": {
@@ -402,7 +399,6 @@
         "x-authentication-required": true,
         "x-action": true
       },
-      "parameters": []
     },
     "/auth/keepAlive": {
       "post": {
@@ -422,7 +418,6 @@
         "x-authentication-required": true,
         "x-action": true
       },
-      "parameters": []
     },
     "/auth/tokens": {
       "post": {
@@ -442,7 +437,6 @@
         "x-authentication-required": false,
         "x-action": true
       },
-      "parameters": []
     },
     "/computer/obj/computer/{id}/recalculateSmartGroups": {
       "post": {
