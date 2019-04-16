@@ -3429,7 +3429,7 @@
       },
       "put": {
         "tags": [
-          "cache-settings"
+          "Settings"
         ],
         "description": "updates cache settings\n",
         "parameters": [
