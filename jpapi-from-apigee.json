@@ -151,7 +151,7 @@
     "/action/device-enrollment/upload-token": {
       "post": {
         "tags": [
-          "device-enrollment"
+          "Settings"
         ],
         "description": "Creates a device enrollment instance with the supplied token.",
         "parameters": [
@@ -248,7 +248,7 @@
     "/action/device-enrollment/{id}/disown": {
       "post": {
         "tags": [
-          "device-enrollment"
+          "Settings"
         ],
         "description": "Disowns devices from the given device enrollment instance",
         "parameters": [
@@ -308,7 +308,7 @@
     "/action/device-enrollment/{id}/upload-token": {
       "put": {
         "tags": [
-          "device-enrollment"
+          "Settings"
         ],
         "description": "Updates a device enrollment instance with the supplied token.",
         "parameters": [
@@ -350,7 +350,7 @@
     "/auth": {
       "get": {
         "tags": [
-          "api-authentication"
+          "Authorization"
         ],
         "description": "Get all the authorization details associated with the current api token",
         "parameters": [],
@@ -368,7 +368,7 @@
     "/auth/current": {
       "post": {
         "tags": [
-          "api-authentication"
+          "Authorization"
         ],
         "description": "Get the authorization details associated with the current api token for the users current site",
         "parameters": [],
@@ -387,7 +387,7 @@
     "/auth/invalidateToken": {
       "post": {
         "tags": [
-          "api-authentication"
+          "Authorization"
         ],
         "description": "Invalidates current token",
         "parameters": [],
@@ -403,7 +403,7 @@
     "/auth/keepAlive": {
       "post": {
         "tags": [
-          "api-authentication"
+          "Authorization"
         ],
         "description": "Invalidates existing token and generates new token with extended expiration based on existing token credentials.",
         "parameters": [],
@@ -422,7 +422,7 @@
     "/auth/tokens": {
       "post": {
         "tags": [
-          "api-authentication"
+          "Authorization"
         ],
         "description": "Create a token based on other authentication details (basic, etc.)\n",
         "parameters": [],
@@ -441,7 +441,7 @@
     "/computer/obj/computer/{id}/recalculateSmartGroups": {
       "post": {
         "tags": [
-          "smart-computer-groups"
+          "Groups"
         ],
         "description": "Recalculates a smart group for the given id and then\nreturns the count of smart groups the computer falls into\n",
         "parameters": [
@@ -474,7 +474,7 @@
     "/computer/obj/smartgroup/{id}/recalculate": {
       "post": {
         "tags": [
-          "smart-computer-groups"
+          "Groups"
         ],
         "description": "Recalculates the smart group for the given id and then\nreturns the ids for the computers in the smart group\n",
         "parameters": [
@@ -507,7 +507,7 @@
     "/deployable/obj/ebook": {
       "get": {
         "tags": [
-          "ebooks"
+          "Inventory"
         ],
         "description": "Gets ebook object",
         "parameters": [],
@@ -532,7 +532,7 @@
     "/deployable/obj/ebook/{id}": {
       "get": {
         "tags": [
-          "ebooks"
+          "Inventory"
         ],
         "description": "Gets specified Ebook object\n",
         "parameters": [
@@ -565,7 +565,7 @@
     "/deployable/obj/ebook/{id}/scope": {
       "get": {
         "tags": [
-          "ebooks"
+          "Content Management"
         ],
         "description": "Gets specified scope of Ebook object\n",
         "parameters": [
@@ -598,7 +598,7 @@
     "/device-enrollment": {
       "get": {
         "tags": [
-          "device-enrollment"
+          "Settings"
         ],
         "description": "Search for sorted and paged device enrollment instances",
         "parameters": [
@@ -645,7 +645,7 @@
     "/device-enrollment/public-key": {
       "get": {
         "tags": [
-          "device-enrollment"
+          "Settings"
         ],
         "description": "Retrieve the Jamf Pro device enrollment public key",
         "parameters": [],
@@ -669,7 +669,7 @@
     "/device-enrollment/{id}": {
       "get": {
         "tags": [
-          "device-enrollment"
+          "Settings"
         ],
         "description": "Retrieves a Device Enrollment Instance with the supplied id",
         "parameters": [
@@ -697,7 +697,7 @@
       },
       "put": {
         "tags": [
-          "device-enrollment"
+          "Settings"
         ],
         "description": "Updates a Device Enrollment Instance with the supplied id",
         "parameters": [
@@ -750,7 +750,7 @@
       },
       "delete": {
         "tags": [
-          "device-enrollment"
+          "Settings"
         ],
         "description": "Deletes a Device Enrollment Instance with the supplied id",
         "parameters": [
@@ -778,7 +778,7 @@
     "/devices/advancedSearches": {
       "get": {
         "tags": [
-          "advanced-mobile-device-searches"
+          "Inventory"
         ],
         "description": "Gets Advanced Search Objects\n",
         "parameters": [],
@@ -800,7 +800,7 @@
       },
       "post": {
         "tags": [
-          "advanced-mobile-device-searches"
+          "Inventory"
         ],
         "description": "Creates Advanced Search Object\n",
         "parameters": [
@@ -830,7 +830,7 @@
     "/devices/advancedSearches/choices": {
       "get": {
         "tags": [
-          "advanced-mobile-device-searches"
+          "Inventory"
         ],
         "description": "Gets Mobile Device Advanced Search criteria choices\n",
         "parameters": [
@@ -871,7 +871,7 @@
     "/devices/advancedSearches/deleteSearches": {
       "post": {
         "tags": [
-          "advanced-mobile-device-searches"
+          "Inventory"
         ],
         "description": "Removes specified Advanced Search Objects\n",
         "parameters": [
