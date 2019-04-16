@@ -136,7 +136,6 @@
           "lobby"
         ],
         "description": "Returns information about the Jamf Pro API including the current version.\n",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Successful response",
@@ -353,7 +352,6 @@
           "Authorization"
         ],
         "description": "Get all the authorization details associated with the current api token",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Current authorization details.",
@@ -371,7 +369,6 @@
           "Authorization"
         ],
         "description": "Get the authorization details associated with the current api token for the users current site",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Authorization details for users current site.",
@@ -390,7 +387,6 @@
           "Authorization"
         ],
         "description": "Invalidates current token",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "token invalidated"
@@ -406,7 +402,6 @@
           "Authorization"
         ],
         "description": "Invalidates existing token and generates new token with extended expiration based on existing token credentials.",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Updated token.",
@@ -469,7 +464,6 @@
           "Update Smart Computer Groups"
         ]
       },
-      "parameters": []
     },
     "/computer/obj/smartgroup/{id}/recalculate": {
       "post": {
@@ -502,7 +496,6 @@
           "Update Smart Computer Groups"
         ]
       },
-      "parameters": []
     },
     "/deployable/obj/ebook": {
       "get": {
@@ -510,7 +503,6 @@
           "Inventory"
         ],
         "description": "Gets ebook object",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Successful response",
@@ -527,7 +519,6 @@
           "Read eBooks"
         ]
       },
-      "parameters": []
     },
     "/deployable/obj/ebook/{id}": {
       "get": {
@@ -560,7 +551,6 @@
           "Read eBooks"
         ]
       },
-      "parameters": []
     },
     "/deployable/obj/ebook/{id}/scope": {
       "get": {
@@ -593,7 +583,6 @@
           "Read eBooks"
         ]
       },
-      "parameters": []
     },
     "/device-enrollment": {
       "get": {
@@ -640,7 +629,6 @@
           "Read Device Enrollment Program Instances"
         ]
       },
-      "parameters": []
     },
     "/device-enrollment/public-key": {
       "get": {
@@ -648,7 +636,6 @@
           "Settings"
         ],
         "description": "Retrieve the Jamf Pro device enrollment public key",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Success",
@@ -664,7 +651,6 @@
           "Read Device Enrollment Program Instances"
         ]
       },
-      "parameters": []
     },
     "/device-enrollment/{id}": {
       "get": {
@@ -773,7 +759,6 @@
           "Delete Device Enrollment Program Instances"
         ]
       },
-      "parameters": []
     },
     "/devices/advancedSearches": {
       "get": {
@@ -781,7 +766,6 @@
           "Inventory"
         ],
         "description": "Gets Advanced Search Objects\n",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Successful response - Advanced searches retrieved",
@@ -825,7 +809,6 @@
           "Create Advanced Mobile Device Searches"
         ]
       },
-      "parameters": []
     },
     "/devices/advancedSearches/choices": {
       "get": {
@@ -866,7 +849,6 @@
           "Read Advanced Mobile Device Searches"
         ]
       },
-      "parameters": []
     },
     "/devices/advancedSearches/deleteSearches": {
       "post": {
@@ -903,7 +885,6 @@
           "Delete Advanced Mobile Device Searches"
         ]
       },
-      "parameters": []
     },
     "/devices/advancedSearches/{id}": {
       "get": {
@@ -1004,7 +985,6 @@
           "Delete Advanced Mobile Device Searches"
         ]
       },
-      "parameters": []
     },
     "/devices/extensionAttributes": {
       "get": {
@@ -1034,7 +1014,6 @@
           "Read Mobile Device Extension Attributes"
         ]
       },
-      "parameters": []
     },
     "/engage": {
       "get": {
@@ -1083,7 +1062,6 @@
           "Update Engage Settings"
         ]
       },
-      "parameters": []
     },
     "/engage/history": {
       "get": {
@@ -1091,7 +1069,6 @@
           "Settings"
         ],
         "description": "Gets Engage settings history\n",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Details of Engage settings history were found",
@@ -1107,7 +1084,6 @@
           "Read Engage Settings"
         ]
       },
-      "parameters": []
     },
     "/engage/history/notes": {
       "post": {
@@ -1138,7 +1114,6 @@
           "Update Engage Settings"
         ]
       },
-      "parameters": []
     },
     "/inventory-preload": {
       "get": {
@@ -1246,7 +1221,6 @@
           "Delete Inventory Preload Records"
         ]
       },
-      "parameters": []
     },
     "/inventory-preload/csv-template": {
       "get": {
@@ -1267,7 +1241,6 @@
           "Read Inventory Preload Records"
         ]
       },
-      "parameters": []
     },
     "/inventory-preload/history": {
       "get": {
@@ -1291,7 +1264,6 @@
           "Read Inventory Preload Records"
         ]
       },
-      "parameters": []
     },
     "/inventory-preload/history/notes": {
       "post": {
@@ -1328,7 +1300,6 @@
           "Update Inventory Preload Records"
         ]
       },
-      "parameters": []
     },
     "/inventory-preload/validate-csv": {
       "post": {
@@ -1364,7 +1335,6 @@
         ],
         "x-action": true
       },
-      "parameters": []
     },
     "/inventory-preload/{id}": {
       "get": {
@@ -1457,7 +1427,6 @@
           "Delete Inventory Preload Records"
         ]
       },
-      "parameters": []
     },
     "/inventory/obj/mobileDevice": {
       "get": {
@@ -1482,7 +1451,6 @@
           "Read Mobile Devices"
         ]
       },
-      "parameters": []
     },
     "/inventory/obj/mobileDevice/{id}": {
       "get": {
@@ -1512,7 +1480,6 @@
           "Read Mobile Devices"
         ]
       },
-      "parameters": []
     },
     "/inventory/obj/mobileDevice/{id}/detail": {
       "get": {
@@ -1542,7 +1509,6 @@
           "Read Mobile Devices"
         ]
       },
-      "parameters": []
     },
     "/inventory/obj/mobileDevice/{id}/update": {
       "post": {
@@ -1580,7 +1546,6 @@
           "Update Mobile Devices"
         ]
       },
-      "parameters": []
     },
     "/inventory/searchMobileDevices": {
       "post": {
@@ -1609,7 +1574,6 @@
           "Read Mobile Devices"
         ]
       },
-      "parameters": []
     },
     "/ldap/groups": {
       "get": {
@@ -1638,7 +1602,6 @@
           "Update User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/ldap/servers": {
       "get": {
@@ -1659,7 +1622,6 @@
           "Read User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/mobileDevice/obj/mobileDevice/{id}/recalculateSmartGroups": {
       "post": {
@@ -1692,7 +1654,6 @@
           "Update Smart Mobile Device Groups"
         ]
       },
-      "parameters": []
     },
     "/mobileDevice/obj/smartgroup/{id}/recalculate": {
       "post": {
@@ -1725,7 +1686,6 @@
           "Update Smart Mobile Device Groups"
         ]
       },
-      "parameters": []
     },
     "/notifications/alerts": {
       "get": {
@@ -1748,7 +1708,6 @@
         },
         "x-authentication-required": true
       },
-      "parameters": []
     },
     "/notifications/alerts/{id}": {
       "delete": {
@@ -1777,7 +1736,6 @@
           "Dismiss Notifications"
         ]
       },
-      "parameters": []
     },
     "/notifications/alerts/{type}/{id}": {
       "delete": {
@@ -1813,7 +1771,6 @@
           "Dismiss Notifications"
         ]
       },
-      "parameters": []
     },
     "/patch/disclaimerAgree": {
       "post": {
@@ -1821,7 +1778,6 @@
           "Settings"
         ],
         "description": "Accept Patch reporting disclaimer",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -1832,7 +1788,6 @@
         ],
         "x-action": true
       },
-      "parameters": []
     },
     "/patch/obj/policy/{policyId}": {
       "get": {
@@ -1861,7 +1816,6 @@
           "Read Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/patch/obj/policy/{policyId}/logs/eligibleRetryCount": {
       "get": {
@@ -1890,7 +1844,6 @@
           "Read Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/patch/obj/policy/{policyId}/softwareTitleConfigurationId": {
       "get": {
@@ -1919,7 +1872,6 @@
           "Read Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/patch/obj/softwareTitle/{id}/policies": {
       "get": {
@@ -1948,7 +1900,6 @@
           "Read Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/patch/obj/softwareTitleConfiguration/{id}": {
       "get": {
@@ -1977,7 +1928,6 @@
           "Read Patch Management Software Titles"
         ]
       },
-      "parameters": []
     },
     "/patch/obj/{id}": {
       "get": {
@@ -2041,7 +1991,6 @@
           "Read Patch Management Software Titles"
         ]
       },
-      "parameters": []
     },
     "/patch/obj/{id}/versions": {
       "get": {
@@ -2070,7 +2019,6 @@
           "Read Patch Management Software Titles"
         ]
       },
-      "parameters": []
     },
     "/patch/onDashboard": {
       "get": {
@@ -2094,7 +2042,6 @@
           "Read Patch Management Software Titles"
         ]
       },
-      "parameters": []
     },
     "/patch/patch-policies": {
       "get": {
@@ -2130,7 +2077,6 @@
           "Read Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/patch/patch-policies/{id}/dashboard": {
       "get": {
@@ -2208,7 +2154,6 @@
           "Read Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/patch/patch-policies/{id}/logs": {
       "get": {
@@ -2244,7 +2189,6 @@
           "Read Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/patch/retryPolicy": {
       "post": {
@@ -2271,7 +2215,6 @@
           "Update Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/patch/searchActivePatchHistory": {
       "post": {
@@ -2302,7 +2245,6 @@
           "Read Patch Management Software Titles"
         ]
       },
-      "parameters": []
     },
     "/patch/searchPatchPolicyLogs": {
       "post": {
@@ -2332,7 +2274,6 @@
           "Read Patch Policies"
         ]
       },
-      "parameters": []
     },
     "/self-service/branding/configurations": {
       "get": {
@@ -2404,7 +2345,6 @@
           "Create Self Service Branding Configuration"
         ]
       },
-      "parameters": []
     },
     "/self-service/branding/configurations/{id}": {
       "get": {
@@ -2514,7 +2454,6 @@
           "Delete Self Service Branding Configuration"
         ]
       },
-      "parameters": []
     },
     "/self-service/branding/images": {
       "post": {
@@ -2546,7 +2485,6 @@
           "Update Self Service Branding Configuration"
         ]
       },
-      "parameters": []
     },
     "/self-service/branding/images/{id}": {
       "get": {
@@ -2586,7 +2524,6 @@
         },
         "x-authentication-required": false
       },
-      "parameters": []
     },
     "/settings/deleteBuildings": {
       "post": {
@@ -2622,7 +2559,6 @@
           "Delete Buildings"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment": {
       "get": {
@@ -2675,7 +2611,6 @@
           "Update User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/access-groups": {
       "get": {
@@ -2718,7 +2653,6 @@
           "Read User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/access-groups/{group-key}": {
       "get": {
@@ -2821,7 +2755,6 @@
           "Update User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/filtered-language-codes": {
       "get": {
@@ -2845,7 +2778,6 @@
           "Read User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/history": {
       "get": {
@@ -2875,7 +2807,6 @@
           "Read User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/history/notes": {
       "post": {
@@ -2912,7 +2843,6 @@
           "Update User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/language-codes": {
       "get": {
@@ -2936,7 +2866,6 @@
           "Read User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/languages": {
       "get": {
@@ -2979,7 +2908,6 @@
           "Read User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/languages/{language}": {
       "get": {
@@ -3083,7 +3011,6 @@
           "Update User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/enrollment/settings": {
       "get": {
@@ -3139,7 +3066,6 @@
           "Update User-Initiated Enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/issueTomcatSslCertificate": {
       "post": {
@@ -3158,7 +3084,6 @@
         ],
         "x-action": true
       },
-      "parameters": []
     },
     "/settings/obj/building": {
       "get": {
@@ -3229,7 +3154,6 @@
           "Create Buildings"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/building/{id}": {
       "get": {
@@ -3322,7 +3246,6 @@
           "Delete Buildings"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/building/{id}/history": {
       "get": {
@@ -3361,7 +3284,6 @@
           "Read Buildings"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/building/{id}/history/notes": {
       "post": {
@@ -3406,7 +3328,6 @@
           "Update Buildings"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/cache": {
       "get": {
@@ -3457,7 +3378,6 @@
           "Update Cache"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/category": {
       "get": {
@@ -3465,7 +3385,6 @@
           "Settings"
         ],
         "description": "Gets `Category` objects.\n",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Successful response",
@@ -3510,7 +3429,6 @@
           "Create Categories"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/category/deleteCategories": {
       "post": {
@@ -3546,7 +3464,6 @@
           "Delete Categories"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/category/searchCategories": {
       "post": {
@@ -3576,7 +3493,6 @@
           "Read Categories"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/category/{id}": {
       "get": {
@@ -3669,7 +3585,6 @@
           "Delete Categories"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/category/{id}/history": {
       "get": {
@@ -3708,7 +3623,6 @@
           "Read Categories"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/category/{id}/history/notes": {
       "post": {
@@ -3753,7 +3667,6 @@
           "Update Categories"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/checkIn": {
       "get": {
@@ -3761,7 +3674,6 @@
           "Settings"
         ],
         "description": "Gets `Client Check-In` object.\n",
-        "parameters": [],
         "responses": {
           "200": {
             "description": "Successful response",
@@ -3802,7 +3714,6 @@
           "Update Computer Check-In"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/checkIn/history": {
       "get": {
@@ -3832,7 +3743,6 @@
           "Read Computer Check-In"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/checkIn/history/notes": {
       "post": {
@@ -3869,7 +3779,6 @@
           "Update Computer Check-In"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/department": {
       "get": {
@@ -3922,7 +3831,6 @@
           "Create Departments"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/department/deleteDepartments": {
       "post": {
@@ -3958,7 +3866,6 @@
           "Delete Departments"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/department/searchDepartments": {
       "post": {
@@ -3988,7 +3895,6 @@
           "Read Departments"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/department/{id}": {
       "get": {
@@ -4081,7 +3987,6 @@
           "Delete Departments"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/department/{id}/history": {
       "get": {
@@ -4120,7 +4025,6 @@
           "Read Departments"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/department/{id}/history/notes": {
       "post": {
@@ -4165,7 +4069,6 @@
           "Update Departments"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/policyProperties": {
       "get": {
@@ -4214,7 +4117,6 @@
           "Update Policies"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/reenrollment": {
       "get": {
@@ -4266,7 +4168,6 @@
           "Update Re-enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/reenrollment/history": {
       "get": {
@@ -4296,7 +4197,6 @@
           "Read Re-enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/reenrollment/history/notes": {
       "post": {
@@ -4333,7 +4233,6 @@
           "Update Re-enrollment"
         ]
       },
-      "parameters": []
     },
     "/settings/obj/selfservice": {
       "get": {
@@ -4382,7 +4281,6 @@
           "Update Self Service"
         ]
       },
-      "parameters": []
     },
     "/settings/scripts": {
       "get": {
@@ -4453,7 +4351,6 @@
           "Create Scripts"
         ]
       },
-      "parameters": []
     },
     "/settings/scripts/{id}": {
       "get": {
@@ -4546,7 +4443,6 @@
           "Delete Scripts"
         ]
       },
-      "parameters": []
     },
     "/settings/scripts/{id}/download": {
       "get": {
@@ -4578,7 +4474,6 @@
           "Read Scripts"
         ]
       },
-      "parameters": []
     },
     "/settings/scripts/{id}/history": {
       "get": {
@@ -4617,7 +4512,6 @@
           "Read Scripts"
         ]
       },
-      "parameters": []
     },
     "/settings/scripts/{id}/history/notes": {
       "post": {
@@ -4662,7 +4556,6 @@
           "Read Scripts"
         ]
       },
-      "parameters": []
     },
     "/settings/sites": {
       "get": {
@@ -4683,7 +4576,6 @@
           "Read Sites"
         ]
       },
-      "parameters": []
     },
     "/settings/sso": {
       "get": {
@@ -4736,7 +4628,6 @@
           "Update SSO Settings"
         ]
       },
-      "parameters": []
     },
     "/settings/sso/cert": {
       "get": {
@@ -4824,7 +4715,6 @@
           "Update SSO Settings"
         ]
       },
-      "parameters": []
     },
     "/settings/sso/cert/download": {
       "get": {
@@ -4845,7 +4735,6 @@
           "Read SSO Settings"
         ]
       },
-      "parameters": []
     },
     "/settings/sso/history": {
       "get": {
@@ -4875,7 +4764,6 @@
           "Read SSO Settings"
         ]
       },
-      "parameters": []
     },
     "/settings/sso/history/notes": {
       "post": {
@@ -4912,7 +4800,6 @@
           "Update SSO Settings"
         ]
       },
-      "parameters": []
     },
     "/settings/sso/metadata/download": {
       "get": {
@@ -4930,7 +4817,6 @@
           "Read SSO Settings"
         ]
       },
-      "parameters": []
     },
     "/startup-status": {
       "get": {
@@ -4949,7 +4835,6 @@
         },
         "x-authentication-required": false
       },
-      "parameters": []
     },
     "/system/initialize": {
       "post": {
@@ -4976,7 +4861,6 @@
         },
         "x-authentication-required": false
       },
-      "parameters": []
     },
     "/system/obj/info": {
       "get": {
@@ -4995,7 +4879,6 @@
         },
         "x-authentication-required": false
       },
-      "parameters": []
     },
     "/user": {
       "get": {
@@ -5019,7 +4902,6 @@
           "Read Accounts"
         ]
       },
-      "parameters": []
     },
     "/user/obj/preference/{key}": {
       "get": {
@@ -5106,7 +4988,6 @@
         },
         "x-authentication-required": true
       },
-      "parameters": []
     },
     "/user/updateSession": {
       "post": {
@@ -5135,7 +5016,6 @@
         },
         "x-authentication-required": true
       },
-      "parameters": []
     },
     "/v1/jamf-pro-server-url": {
       "get": {
@@ -5190,7 +5070,6 @@
           "Update JSS URL"
         ]
       },
-      "parameters": []
     },
     "/v1/jamf-pro-server-url/history": {
       "get": {
@@ -5248,7 +5127,6 @@
           "Update JSS URL"
         ]
       },
-      "parameters": []
     },
     "/vpp/admin-accounts": {
       "get": {
@@ -5269,7 +5147,6 @@
           "Read VPP Administrator Accounts"
         ]
       },
-      "parameters": []
     },
     "/vpp/subscriptions": {
       "get": {
@@ -5290,7 +5167,6 @@
           "Read VPP Administrator Accounts"
         ]
       },
-      "parameters": []
     },
     "/vpp/subscriptions/{id}": {
       "get": {
@@ -5319,7 +5195,6 @@
           "Read VPP Administrator Accounts"
         ]
       },
-      "parameters": []
     }
   },
   "definitions": {
