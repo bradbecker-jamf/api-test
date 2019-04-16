@@ -908,7 +908,7 @@
     "/devices/advancedSearches/{id}": {
       "get": {
         "tags": [
-          "advanced-mobile-device-searches"
+          "Inventory"
         ],
         "description": "Gets Specified Advanced Search Object\n",
         "parameters": [
@@ -938,7 +938,7 @@
       },
       "put": {
         "tags": [
-          "advanced-mobile-device-searches"
+          "Inventory"
         ],
         "description": "Gets Specified Advanced Search Object\n",
         "parameters": [
@@ -976,7 +976,7 @@
       },
       "delete": {
         "tags": [
-          "advanced-mobile-device-searches"
+          "Inventory"
         ],
         "description": "Removes specified Advanced Search Object\n",
         "parameters": [
@@ -1009,7 +1009,7 @@
     "/devices/extensionAttributes": {
       "get": {
         "tags": [
-          "mobile-device-extension-attributes"
+          "Settings"
         ],
         "description": "Gets Mobile Device Extension Attribute values placed in select parameter.",
         "parameters": [
@@ -1039,7 +1039,7 @@
     "/engage": {
       "get": {
         "tags": [
-          "engage"
+          "Settings"
         ],
         "description": "Get Engage settings\n",
         "parameters": [],
@@ -1057,7 +1057,7 @@
       },
       "put": {
         "tags": [
-          "engage"
+          "Settings"
         ],
         "description": "Update Engage settings\n",
         "parameters": [
@@ -1088,7 +1088,7 @@
     "/engage/history": {
       "get": {
         "tags": [
-          "engage"
+          "Settings"
         ],
         "description": "Gets Engage settings history\n",
         "parameters": [],
@@ -1112,7 +1112,7 @@
     "/engage/history/notes": {
       "post": {
         "tags": [
-          "engage"
+          "Settings"
         ],
         "description": "Adds Engage settings history notes\n",
         "parameters": [
@@ -1143,7 +1143,7 @@
     "/inventory-preload": {
       "get": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Returns all Inventory Preload records.",
         "produces": [
@@ -1198,7 +1198,7 @@
       },
       "post": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Create a new Inventory Preload record using JSON or CSV.\n\nA CSV template can be downloaded from /uapi/inventory-preload/csv-template.\n\nSerial number and device type are required. All other fields are optional.\nWhen a matching serial number exists in the Inventory Preload data, the record will be overwritten with the CSV data.\n\nIf the CSV file contains a new username and an email address is provided, the new user is created in Jamf Pro.\nIf the CSV file contains an existing username, the following user-related fields are updated in Jamf Pro.\nFull Name,\nEmail Address,\nPhone Number,\nPosition.\n\nThis endpoint does not do full validation of each record in the CSV data.\nTo do full validation, use the /inventory-preload/validate-csv endpoint first.\n",
         "consumes": [
@@ -1233,7 +1233,7 @@
       },
       "delete": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Deletes all Inventory Preload records.",
         "parameters": [],
@@ -1251,7 +1251,7 @@
     "/inventory-preload/csv-template": {
       "get": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Retrieves the Inventory Preload CSV template.",
         "produces": [
@@ -1272,7 +1272,7 @@
     "/inventory-preload/history": {
       "get": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Gets Inventory Preload history entries.",
         "parameters": [],
@@ -1296,7 +1296,7 @@
     "/inventory-preload/history/notes": {
       "post": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Adds Inventory Preload history object notes.",
         "parameters": [
@@ -1333,7 +1333,7 @@
     "/inventory-preload/validate-csv": {
       "post": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Validate a given CSV file.\n\nSerial number and device type are required. All other fields are optional.\n\nA CSV template can be downloaded from /uapi/inventory-preload/csv-template.\n",
         "consumes": [
@@ -1369,7 +1369,7 @@
     "/inventory-preload/{id}": {
       "get": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Retrieves an Inventory Preload record.",
         "parameters": [
@@ -1397,7 +1397,7 @@
       },
       "put": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Updates an Inventory Preload record.",
         "parameters": [
@@ -1434,7 +1434,7 @@
       },
       "delete": {
         "tags": [
-          "inventory-preload"
+          "Settings"
         ],
         "description": "Deletes an Inventory Preload record.",
         "parameters": [
@@ -1462,7 +1462,7 @@
     "/inventory/obj/mobileDevice": {
       "get": {
         "tags": [
-          "mobile-devices"
+          "Inventory"
         ],
         "description": "Gets `MobileDevice` objects.\n",
         "parameters": [],
@@ -1487,7 +1487,7 @@
     "/inventory/obj/mobileDevice/{id}": {
       "get": {
         "tags": [
-          "mobile-devices"
+          "Inventory"
         ],
         "description": "Get MobileDevice",
         "parameters": [
@@ -1517,7 +1517,7 @@
     "/inventory/obj/mobileDevice/{id}/detail": {
       "get": {
         "tags": [
-          "mobile-devices"
+          "Inventory"
         ],
         "description": "Get MobileDevice",
         "parameters": [
@@ -1547,7 +1547,7 @@
     "/inventory/obj/mobileDevice/{id}/update": {
       "post": {
         "tags": [
-          "mobile-devices"
+          "Inventory"
         ],
         "description": "Updates fields on a mobile device that are allowed to be modified by users.",
         "parameters": [
@@ -1585,7 +1585,7 @@
     "/inventory/searchMobileDevices": {
       "post": {
         "tags": [
-          "mobile-devices"
+          "Inventory"
         ],
         "parameters": [
           {
@@ -1614,7 +1614,7 @@
     "/ldap/groups": {
       "get": {
         "tags": [
-          "ldap-groups"
+          "Settings"
         ],
         "description": "Retrieves the configured access groups that contain the text in the searchParam.",
         "parameters": [
@@ -1643,7 +1643,7 @@
     "/ldap/servers": {
       "get": {
         "tags": [
-          "ldap-servers"
+          "Settings"
         ],
         "description": "Retrieves all LDAP Servers.",
         "parameters": [],
@@ -1664,7 +1664,7 @@
     "/mobileDevice/obj/mobileDevice/{id}/recalculateSmartGroups": {
       "post": {
         "tags": [
-          "smart-mobile-device-groups"
+          "Groups"
         ],
         "description": "Recalculates all smart groups for the given device id and then\nreturns the count of smart groups the device falls into\n",
         "parameters": [
@@ -1697,7 +1697,7 @@
     "/mobileDevice/obj/smartgroup/{id}/recalculate": {
       "post": {
         "tags": [
-          "smart-mobile-device-groups"
+          "Groups"
         ],
         "description": "recalculates a smart group for the given id and then\nreturns the ids for the devices in the smart group\n",
         "parameters": [
@@ -1730,7 +1730,7 @@
     "/notifications/alerts": {
       "get": {
         "tags": [
-          "jamf-pro-notifications"
+          "Settings"
         ],
         "description": "Gets notifications for user and site\n",
         "parameters": [],
@@ -1753,7 +1753,7 @@
     "/notifications/alerts/{id}": {
       "delete": {
         "tags": [
-          "jamf-pro-notifications"
+          "Settings"
         ],
         "description": "DEPRECATED - USE \"alerts/{type}/{id}\" INSTEAD. Deletes only Patch Management notifications.\n",
         "parameters": [
@@ -1782,7 +1782,7 @@
     "/notifications/alerts/{type}/{id}": {
       "delete": {
         "tags": [
-          "jamf-pro-notifications"
+          "Settings"
         ],
         "description": "Deletes notifications. Options for 'type' are 'PRESTAGE_IMAGING_SECURITY' and 'PATCH_UPDATE'.\n",
         "parameters": [
@@ -1818,7 +1818,7 @@
     "/patch/disclaimerAgree": {
       "post": {
         "tags": [
-          "patches"
+          "Settings"
         ],
         "description": "Accept Patch reporting disclaimer",
         "parameters": [],
@@ -1837,7 +1837,7 @@
     "/patch/obj/policy/{policyId}": {
       "get": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Returns patch policy summary.",
         "parameters": [
@@ -1866,7 +1866,7 @@
     "/patch/obj/policy/{policyId}/logs/eligibleRetryCount": {
       "get": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "return the count of the patch policy logs for the policyId that are eligible for a retry attempt",
         "parameters": [
@@ -1895,7 +1895,7 @@
     "/patch/obj/policy/{policyId}/softwareTitleConfigurationId": {
       "get": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Return the Software Title Configuration Id for the given patch policy.",
         "parameters": [
@@ -1924,7 +1924,7 @@
     "/patch/obj/softwareTitle/{id}/policies": {
       "get": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Returns the summaries of the patch policies for the software title.",
         "parameters": [
@@ -1953,7 +1953,7 @@
     "/patch/obj/softwareTitleConfiguration/{id}": {
       "get": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Returns the software title configuration.",
         "parameters": [
@@ -1982,7 +1982,7 @@
     "/patch/obj/{id}": {
       "get": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Returns active patch summary.",
         "parameters": [
@@ -2008,7 +2008,7 @@
       },
       "put": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Updates patch report.",
         "parameters": [
@@ -2046,7 +2046,7 @@
     "/patch/obj/{id}/versions": {
       "get": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Returns patch versions.",
         "parameters": [
@@ -2075,7 +2075,7 @@
     "/patch/onDashboard": {
       "get": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Returns list of patch ids on dashboard.",
         "parameters": [],
@@ -2099,7 +2099,7 @@
     "/patch/patch-policies": {
       "get": {
         "tags": [
-          "patch-policies"
+          "Content Management"
         ],
         "description": "Returns a list of patch policies.",
         "parameters": [
@@ -2135,7 +2135,7 @@
     "/patch/patch-policies/{id}/dashboard": {
       "get": {
         "tags": [
-          "patch-policies"
+          "Content Management"
         ],
         "description": "Returns whether or not the requested patch policy is on the dashboard",
         "parameters": [
@@ -2164,7 +2164,7 @@
       },
       "post": {
         "tags": [
-          "patch-policies"
+          "Content Management"
         ],
         "description": "Adds a patch policy to the dashboard.",
         "parameters": [
@@ -2187,7 +2187,7 @@
       },
       "delete": {
         "tags": [
-          "patch-policies"
+          "Content Management"
         ],
         "description": "Removes a patch policy from the dashboard.",
         "parameters": [
@@ -2213,7 +2213,7 @@
     "/patch/patch-policies/{id}/logs": {
       "get": {
         "tags": [
-          "patch-policy-logs"
+          "Content Management"
         ],
         "description": "Returns the patch policy attempt details",
         "parameters": [
@@ -2249,7 +2249,7 @@
     "/patch/retryPolicy": {
       "post": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Retry policy",
         "parameters": [
@@ -2276,7 +2276,7 @@
     "/patch/searchActivePatchHistory": {
       "post": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Searches the history for a specific active patch.  This is used to get detailed information about the computers/devices that a specific patch has been applied to.",
         "parameters": [
@@ -2307,7 +2307,7 @@
     "/patch/searchPatchPolicyLogs": {
       "post": {
         "tags": [
-          "patches"
+          "Content Management"
         ],
         "description": "Return patch policy logs",
         "parameters": [
@@ -2337,7 +2337,7 @@
     "/self-service/branding/configurations": {
       "get": {
         "tags": [
-          "self-service-branding"
+          "Settings"
         ],
         "description": "Search for sorted and paged branding configurations",
         "parameters": [
@@ -2378,7 +2378,7 @@
       },
       "post": {
         "tags": [
-          "self-service-branding"
+          "Settings"
         ],
         "description": "Create a Self Service branding configuration with the supplied details",
         "parameters": [
@@ -2409,7 +2409,7 @@
     "/self-service/branding/configurations/{id}": {
       "get": {
         "tags": [
-          "self-service-branding"
+          "Settings"
         ],
         "description": "Read a single Self Service branding configuration indicated by the provided id.",
         "parameters": [
@@ -2450,7 +2450,7 @@
       },
       "put": {
         "tags": [
-          "self-service-branding"
+          "Settings"
         ],
         "description": "Update a Self Service branding configuration with the supplied details",
         "parameters": [
@@ -2489,7 +2489,7 @@
       },
       "delete": {
         "tags": [
-          "self-service-branding"
+          "Settings"
         ],
         "description": "Delete the Self Service branding configuration indicated by the provided id.",
         "parameters": [
@@ -2519,7 +2519,7 @@
     "/self-service/branding/images": {
       "post": {
         "tags": [
-          "self-service-branding"
+          "Settings"
         ],
         "description": "Uploads an image",
         "consumes": [
@@ -2551,7 +2551,7 @@
     "/self-service/branding/images/{id}": {
       "get": {
         "tags": [
-          "self-service-branding"
+          "Settings"
         ],
         "description": "Downloads the image that associates with the id supplied",
         "produces": [
@@ -2591,7 +2591,7 @@
     "/settings/deleteBuildings": {
       "post": {
         "tags": [
-          "buildings"
+          "Settings"
         ],
         "parameters": [
           {
@@ -2627,7 +2627,7 @@
     "/settings/enrollment": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Gets Enrollment object and re-enrollment settings.\n",
         "parameters": [],
@@ -2646,7 +2646,7 @@
       },
       "put": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Update enrollment object",
         "parameters": [
@@ -2680,7 +2680,7 @@
     "/settings/enrollment/access-groups": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Retrieves the configured LDAP groups configured for User-Initiated Enrollment.",
         "parameters": [
@@ -2723,7 +2723,7 @@
     "/settings/enrollment/access-groups/{group-key}": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Retrieves the configured LDAP groups configured for User-Initiated Enrollment.",
         "parameters": [
@@ -2755,7 +2755,7 @@
       },
       "put": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Modifies the configured LDAP groups configured for User-Initiated Enrollment.",
         "parameters": [
@@ -2795,7 +2795,7 @@
       },
       "delete": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Deletes an LDAP group's access to user initiated enrollment. The group \"All LDAP Users\" cannot be deleted, but it can be modified to disallow User-Initiated Enrollment.",
         "parameters": [
@@ -2826,7 +2826,7 @@
     "/settings/enrollment/filtered-language-codes": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Retrieves the list of languages and corresponding ISO 639-1 Codes, but only those not already added to Enrollment.",
         "parameters": [],
@@ -2850,7 +2850,7 @@
     "/settings/enrollment/history": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Gets Enrollment history object\n",
         "parameters": [],
@@ -2880,7 +2880,7 @@
     "/settings/enrollment/history/notes": {
       "post": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Adds Enrollment history object notes\n",
         "parameters": [
@@ -2917,7 +2917,7 @@
     "/settings/enrollment/language-codes": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Retrieves the list of languages and corresponding ISO 639-1 Codes.",
         "parameters": [],
@@ -2941,7 +2941,7 @@
     "/settings/enrollment/languages": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Returns an array of the language codes that have enrollment messaging currently configured.",
         "parameters": [
@@ -2984,7 +2984,7 @@
     "/settings/enrollment/languages/{language}": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Retrieves the enrollment messaging for a language.",
         "parameters": [
@@ -3016,7 +3016,7 @@
       },
       "put": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Edit enrollment messaging for a language.",
         "parameters": [
@@ -3056,7 +3056,7 @@
       },
       "delete": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Delete the enrollment messaging for a language.",
         "parameters": [
@@ -3088,7 +3088,7 @@
     "/settings/enrollment/settings": {
       "get": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Gets Enrollment object and re-enrollment settings. The settings can be altered without providing the existing management password by providing the following value for managementPassword:  \\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\\uffff\n",
         "parameters": [],
@@ -3107,7 +3107,7 @@
       },
       "put": {
         "tags": [
-          "enrollment"
+          "Settings"
         ],
         "description": "Update enrollment object. Regarding the `developerCertificateIdentity`, if this object is omitted, the certificate will not be deleted from Jamf Pro. The identityKeystore is the entire cert file as a base64 encoded string. The md5Sum field is not required in the PUT request, but is calculated and returned in the response.",
         "parameters": [
@@ -3144,7 +3144,7 @@
     "/settings/issueTomcatSslCertificate": {
       "post": {
         "tags": [
-          "tomcat-settings"
+          "Settings"
         ],
         "description": "generate a SSL Certificate using Jamf Certificate Authority",
         "parameters": [],
@@ -3163,7 +3163,7 @@
     "/settings/obj/building": {
       "get": {
         "tags": [
-          "buildings"
+          "Settings"
         ],
         "description": "Search for sorted and paged buildings",
         "parameters": [
@@ -3203,7 +3203,7 @@
       },
       "post": {
         "tags": [
-          "buildings"
+          "Settings"
         ],
         "description": "Create building record\n",
         "parameters": [
@@ -3234,7 +3234,7 @@
     "/settings/obj/building/{id}": {
       "get": {
         "tags": [
-          "buildings"
+          "Settings"
         ],
         "description": "Gets specified Building object\n",
         "parameters": [
@@ -3264,7 +3264,7 @@
       },
       "put": {
         "tags": [
-          "buildings"
+          "Settings"
         ],
         "description": "Update specified building object\n",
         "parameters": [
@@ -3300,7 +3300,7 @@
       },
       "delete": {
         "tags": [
-          "buildings"
+          "Settings"
         ],
         "description": "Removes specified building record\n",
         "parameters": [
@@ -3327,7 +3327,7 @@
     "/settings/obj/building/{id}/history": {
       "get": {
         "tags": [
-          "buildings"
+          "Settings"
         ],
         "description": "Gets specified Building history object \n",
         "parameters": [
@@ -3366,7 +3366,7 @@
     "/settings/obj/building/{id}/history/notes": {
       "post": {
         "tags": [
-          "buildings"
+          "Settings"
         ],
         "description": "Adds specified Building history object notes \n",
         "parameters": [
@@ -3411,7 +3411,7 @@
     "/settings/obj/cache": {
       "get": {
         "tags": [
-          "cache-settings"
+          "Settings"
         ],
         "description": "gets cache settings",
         "parameters": [],
@@ -3462,7 +3462,7 @@
     "/settings/obj/category": {
       "get": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "description": "Gets `Category` objects.\n",
         "parameters": [],
@@ -3484,7 +3484,7 @@
       },
       "post": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "description": "Create category record\n",
         "parameters": [
@@ -3515,7 +3515,7 @@
     "/settings/obj/category/deleteCategories": {
       "post": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "parameters": [
           {
@@ -3551,7 +3551,7 @@
     "/settings/obj/category/searchCategories": {
       "post": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "description": "Search for sorted and paged categories",
         "parameters": [
@@ -3581,7 +3581,7 @@
     "/settings/obj/category/{id}": {
       "get": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "description": "Gets specified Category object\n",
         "parameters": [
@@ -3611,7 +3611,7 @@
       },
       "put": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "description": "Update specified category object\n",
         "parameters": [
@@ -3647,7 +3647,7 @@
       },
       "delete": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "description": "Removes specified category record\n",
         "parameters": [
@@ -3674,7 +3674,7 @@
     "/settings/obj/category/{id}/history": {
       "get": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "description": "Gets specified Category history object\n",
         "parameters": [
@@ -3713,7 +3713,7 @@
     "/settings/obj/category/{id}/history/notes": {
       "post": {
         "tags": [
-          "categories"
+          "Settings"
         ],
         "description": "Adds specified Category history object notes\n",
         "parameters": [
